@@ -1,7 +1,7 @@
-import './styles.css';
-import './queries.css';
+import './styles/styles.css';
+import './styles/queries.css';
 import { FaShoppingCart } from 'react-icons/fa';
-import GymImg1 from './gym-img2.png';
+import GymImg1 from './images/gym-img2.png';
 function App() {
   return (
     <div className="container">

@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: #fff;
 }
 * {
   margin: 0;
@@ -16,5 +17,5 @@ body {
   font-size: 1.6rem;
 }
 section {
-  margin: 0 5%;
+  margin: 0 15%;
 }
