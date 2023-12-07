@@ -3,9 +3,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 60px;
   margin: 0 auto;
-  max-width: 130rem;
 }
 
 .nav-bar {
@@ -16,8 +15,9 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   z-index: 2;
+  padding: 0 40px;
 }
 .nav-bar ul {
   justify-content: space-around;
@@ -26,7 +26,7 @@
   align-items: center;
   border-radius: 0 0 20px 20px;
   padding: 15px 10px 10px 10px;
-  width: 70%;
+  width: 95rem;
 }
 .nav-bar ul a {
   border-bottom: 4px transparent solid;
@@ -50,10 +50,11 @@
 }
 .nav-bar-laterals {
   font-weight: 900;
-  width: 120px;
+  width: 100%;
   height: 100%;
   padding: 5px;
   display: flex;
+  align-items: center;
   border-bottom: 4px transparent solid;
   justify-content: center;
   color: rgb(228, 176, 81);
@@ -68,19 +69,18 @@
 }
 .nav-bar-laterals p {
   margin: 0 10px;
+  font-size: 12px;
 }
-.lat2 {
-  width: 80px;
-}
+
 .main-background-img img {
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
+  width: 100vw; /* Define a largura da imagem igual à largura da tela */
+  height: 100vh;
   object-fit: cover;
-  position: absolute;
+  position: fixed;
   left: 0;
+  top: 0;
   z-index: -2;
-  overflow: hidden;
+  transition: background-size 0.3s; /* Adiciona uma transição suave para a propriedade background-size */
 }
 .main-background-img::before {
   content: '';
@@ -94,7 +94,7 @@
   z-index: -1;
 }
 .main-content-section {
-  height: 150px;
+  left: 0;
 }
 .main-content-container {
   display: flex;
@@ -103,41 +103,144 @@
   justify-content: center;
 }
 .main-content-content {
+  max-width: 130rem;
+  margin-left: 15%;
   padding-top: 100px;
   width: 100%;
   color: white;
 }
 .main-content-content h1 {
   font-size: 40px;
+  text-shadow: 0 8px 13px rgba(0, 0, 0, 0.9);
   letter-spacing: -3px;
   text-transform: uppercase;
+  pointer-events: none;
 }
 .main-explaining-container {
   width: 100%;
   left: 0;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid rgb(228, 86, 81);
   position: absolute;
   height: 200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  background-color: #ffffff24;
+  background-color: #ffffff46;
   color: white;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 0 0 25px 25px;
+  text-shadow: 0 5px 6px rgba(0, 0, 0, 0.8);
 }
 .main-explaining-container h1 {
   font-size: 40px;
 }
+.main-explaining-container p {
+  text-shadow: 0 8px 13px rgba(0, 0, 0, 0.9);
+}
 .main-explaining-container button {
   border: none;
-  background-color: rgb(255, 83, 83);
+  background-color: rgba(255, 83, 83, 0.8);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
   color: white;
   border-radius: 5px;
   height: 30px;
   width: 200px;
 }
+.main-explaining-container button:hover {
+  background-color: rgba(150, 66, 135, 0.5);
+  transition-duration: 0.2s;
+}
 .main-explaining-container button a {
   padding: 10px 60px;
+}
+.consultoria-main-explaining-section {
+  height: 200px;
+}
+.apresentation-section {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  background-color: #000;
+}
+.apresentation-section-container {
+  width: 100%;
+  max-width: 123rem;
+  margin: 0 15%;
+  display: flex;
+  padding: 80px 0;
+  color: white;
+  justify-content: space-between;
+}
+.apresentation-section-container div h1 {
+  color: rgb(228, 176, 81);
+  font-weight: 800;
+  font-size: 40px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.apresentation-section-container div p {
+  font-size: 20px;
+}
+.apresentation-section-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.apresentation-video {
+  width: 300px;
+  height: 200px;
+  background-color: #737373;
+}
+.mentoria-start-section {
+  width: 100%;
+  margin: 0 auto;
+}
+.mentoria-start-container {
+  margin: 0 15%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  text-align: center;
+}
+.mentoria-start-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.mentoria-start-container h1 {
+  font-size: 50px;
+}
+.mentoria-start-container h4 {
+  font-size: 20px;
+  text-align: start;
+}
+.mentoria-start-container p {
+  font-size: 20px;
+  text-align: start;
+  font-weight: 400;
+}
+.mentoria-start-form form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.mentoria-start-form form input {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  width: 80%;
+  border: none;
+  border-bottom: 1px red solid;
+  border-radius: 5px;
+}
+.mentoria-start-form form button {
+  padding: 10px 20px;
+  width: 10%;
+  border: none;
+  background-color: red;
+  border-radius: 5px;
 }

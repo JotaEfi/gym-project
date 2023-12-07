@@ -1,53 +1,24 @@
-import './styles/styles.css';
-import './styles/queries.css';
-import { FaShoppingCart } from 'react-icons/fa';
-import GymImg1 from './images/gym-img2.png';
+// Exemplo no App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import PaginaInicial from './pages/home';
+import Mentoria from './pages/mentoria';
+import Loja from './pages/Loja';
+
 function App() {
   return (
-    <div className="container">
-      <nav className="nav-bar">
-        <a href="">
-          <div className="nav-bar-laterals lat1">
-            <p>Login/Registro</p>
-          </div>
-        </a>
-        <ul>
-          <a href="" className="Item1">
-            Página Inicial
-          </a>
-          <a href="" className="Item2">
-            Mentoria
-          </a>
-          <a href="" className="Item3">
-            Loja
-          </a>
-          <a href="" className="Item4">
-            Consultoria Online
-          </a>
-          <a href="" className="Item5">
-            Anamnese
-          </a>
-          <a href="" className="Item6">
-            Resultados
-          </a>
-          <a href="" className="Item7">
-            Como Funciona?
-          </a>
-        </ul>
-        <a href="">
-          <div className="nav-bar-laterals lat2">
-            <FaShoppingCart size={25} />
-          </div>
-        </a>
-      </nav>
-      <section className="main-content">
-        <div className="main-content-container">
-          <div className="main-background-img">
-            <img src={GymImg1} alt="" />
-          </div>
-        </div>
-      </section>
-    </div>
+    <Router>
+      <div>
+        <NavBar />
+        <Switch>
+          <Route path="/" exact component={PaginaInicial} />
+          <Route path="/mentoria" component={Mentoria} />
+          <Route path="/loja" component={Loja} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
+
 export default App;
