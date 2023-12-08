@@ -10,7 +10,7 @@ function Home() {
       <section className="main-content-section">
         <div className="main-content-container">
           <div className="main-background-img">
-            <img src={GymImg1} alt="" />
+            <img src={GymImg1} alt="Imagem de Academia" />
           </div>
 
           <div className="main-content-content">

@@ -9,7 +9,7 @@ function Mentoria() {
       {NavBar()}
       <div className="main-content-container">
         <div className="main-background-img">
-          <img src={GymImg1} alt="" />
+          <img src={GymImg1} alt="Imagem da Academia" />
         </div>
 
         <div className="main-content-content">
