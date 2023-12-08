@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-import Home from './pages/home.js';
-import Mentoria from './pages/mentoria.js';
+import './css/index.css';
+import Home from './js/pages/home.js';
+import Mentoria from './js/pages/mentoria.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Mentoria />
+    <Mentoria/>
   </React.StrictMode>,
 );
 

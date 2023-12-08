@@ -1,5 +1,5 @@
-import '../styles/styles.css';
-import '../styles/queries.css';
+import '../css/style.css';
+import '../css/queries.css';
 import { FaShoppingCart } from 'react-icons/fa';
 import { RiAccountCircleFill } from 'react-icons/ri';
 import { Link, useLocation } from 'react-router-dom';

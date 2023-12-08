@@ -1,10 +1,10 @@
 // Exemplo no App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import PaginaInicial from './pages/home';
-import Mentoria from './pages/mentoria';
-import Loja from './pages/Loja';
+import NavBar from 'src/js/components/NavBar';
+import PaginaInicial from 'src/js/pages/home';
+import Mentoria from 'src/js/pages/mentoria';
+import Loja from 'src/js/pages/Loja';
 
 function App() {
   return (
