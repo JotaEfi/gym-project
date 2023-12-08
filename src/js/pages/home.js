@@ -1,7 +1,7 @@
-import 'src/style/styles.css';
-import 'src/style/queries.css';
-import NavBar from 'src/js/components/nav-bar.js';
-import GymImg1 from 'src/images/gym-img2.png';
+import '../../css/style.css';
+import '../../css/queries.css';
+import NavBar from '../components/nav-bar.js';
+import GymImg1 from '../../image/gym-imag2.png';
 
 function Home() {
   return (

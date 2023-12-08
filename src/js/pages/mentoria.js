@@ -1,7 +1,7 @@
-import '../styles/styles.css';
-import '../styles/queries.css';
-import NavBar from './components/nav-bar.js';
-import GymImg1 from '../images/gym-imag3.jpg';
+import '../../css/style.css';
+import '../../css/queries.css';
+import NavBar from '../components/nav-bar.js';
+import GymImg1 from '../../image/gym-imag3.jpg';
 
 function Mentoria() {
   return (
