@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
+// =================== Pages =================== //
 import Home from './js/pages/home.js';
 import Mentoria from './js/pages/mentoria.js';
 import Consultoria from './js/pages/consultoria';
