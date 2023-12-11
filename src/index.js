@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
-import Home from './js/pages/home.js';
-import Mentoria from './js/pages/mentoria.js';
+// import Home from './js/pages/home.js';
+// import Mentoria from './js/pages/mentoria.js';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

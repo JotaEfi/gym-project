@@ -14,7 +14,9 @@ function Home() {
           </div>
 
           <div className="main-content-content">
-            <h1>Nome da Pessoa</h1>
+            <div>
+              <h1>Nome da Pessoa</h1>
+            </div>
           </div>
         </div>
       </section>
@@ -25,9 +27,7 @@ function Home() {
             Veja bem os melhores motivos para fazer você mudar de vida e começar
             a trabalhar para desenvolver a si conosco!
           </p>
-          <button>
-            <a href="">Clique Aqui</a>
-          </button>
+          <button>Clique Aqui</button>
         </div>
       </section>
       <section className="apresentation-section">
@@ -51,7 +51,6 @@ function Home() {
         </div>
       </section>
     </div>
-    
   );
 }
 export default Home;

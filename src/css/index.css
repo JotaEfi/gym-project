@@ -23,9 +23,7 @@ body {
 body:fullscreen {
   background-size: auto; /* Define a imagem para seu tamanho natural quando em tela cheia (menu de inspeção aberto) */
 }
-section {
-  margin: 0 15%;
-}
+
 /* Estilo da barra de rolagem */
 ::-webkit-scrollbar {
   width: 4px; /* Largura da barra de rolagem */

@@ -7,15 +7,26 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-  .Item6 {
+  #resultados {
     display: none;
+  }
+
+  .nav-bar ul a {
+    font-size: 10px;
   }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
-  .Item7 {
+@media (max-width: 1250px) {
+  #funciona {
     display: none;
+  }
+  .nav-bar {
+    gap: 10px;
+    padding: 0 30px;
+  }
+  .nav-bar ul a {
+    font-size: 13px;
   }
 }
 

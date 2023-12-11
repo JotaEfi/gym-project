@@ -10,29 +10,37 @@
 .nav-bar {
   left: 50%;
   transform: translate(-50%, 0%);
-  max-width: 130rem;
   position: fixed;
   width: 100%;
   display: flex;
+  gap: 5%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 2;
-  padding: 0 40px;
+  padding: 10px 30px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.nav-bar:hover {
 }
 .nav-bar ul {
   justify-content: space-around;
   display: flex;
-  background-color: black;
   align-items: center;
   border-radius: 0 0 20px 20px;
   padding: 15px 10px 10px 10px;
-  width: 95rem;
+  width: 100%;
+  max-width: 123rem;
 }
 .nav-bar ul a {
   border-bottom: 4px transparent solid;
   font-size: 15px;
-  font-weight: 500;
-  color: white;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
   padding: 10px;
   margin-bottom: 2px;
   text-align: center;
@@ -40,8 +48,15 @@
 .nav-bar ul a:hover {
   border: 2px;
   transition-duration: 0.2s;
-  border-bottom: 4px rgb(228, 176, 81) solid;
+  color: rgb(203, 147, 83);
+  border-bottom: 4px rgb(255, 199, 95) solid;
   border-radius: 5px;
+}
+.nav-bar button {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 2px;
+  backdrop-filter: blur(5px);
 }
 .logo {
   background-color: rgb(88, 88, 88);
@@ -52,32 +67,31 @@
   font-weight: 900;
   width: 100%;
   height: 100%;
-  padding: 5px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   border-bottom: 4px transparent solid;
   justify-content: center;
-  color: rgb(228, 176, 81);
+  color: rgb(243, 159, 13);
 }
 .nav-bar-laterals:hover {
   transition-duration: 0.2s;
-  color: rgb(140, 104, 36);
+  color: rgb(172, 113, 11);
   border: 2px;
   transition-duration: 0.2s;
   border-bottom: 4px rgba(255, 255, 255, 0.218) solid;
   border-radius: 5px;
 }
 .nav-bar-laterals p {
-  margin: 0 10px;
   font-size: 12px;
 }
-
 .main-background-img img {
   width: 100vw; /* Define a largura da imagem igual à largura da tela */
   height: 100vh;
   object-fit: cover;
   position: fixed;
   left: 0;
+
   top: 0;
   z-index: -2;
   transition: background-size 0.3s; /* Adiciona uma transição suave para a propriedade background-size */
@@ -103,11 +117,17 @@
   justify-content: center;
 }
 .main-content-content {
-  max-width: 130rem;
-  margin-left: 15%;
-  padding-top: 100px;
+  padding-top: 120px;
   width: 100%;
   color: white;
+  display: flex;
+  justify-content: center;
+}
+.main-content-content div {
+  max-width: 123rem;
+  padding: 0 50px;
+  display: flex;
+  width: 100%;
 }
 .main-content-content h1 {
   font-size: 40px;
@@ -116,19 +136,28 @@
   text-transform: uppercase;
   pointer-events: none;
 }
-.main-explaining-container {
-  width: 100%;
-  left: 0;
+.consultoria-main-explaining-section {
+  height: 300px;
   border-bottom: 2px solid rgb(228, 86, 81);
+  left: 0;
+  width: 100%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: relative;
+  justify-content: center;
+}
+.main-explaining-container {
+  backdrop-filter: blur(2px);
+  max-width: 123rem;
   position: absolute;
-  height: 200px;
+  height: 300px;
+  width: 100%;
+  padding: 50px;
+  margin: 0 15%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
   flex-direction: column;
-  background-color: #ffffff46;
   color: white;
-  text-align: center;
   border-radius: 0 0 25px 25px;
   text-shadow: 0 5px 6px rgba(0, 0, 0, 0.8);
 }
@@ -154,9 +183,7 @@
 .main-explaining-container button a {
   padding: 10px 60px;
 }
-.consultoria-main-explaining-section {
-  height: 200px;
-}
+
 .apresentation-section {
   width: 100%;
   display: flex;
@@ -167,9 +194,8 @@
 .apresentation-section-container {
   width: 100%;
   max-width: 123rem;
-  margin: 0 15%;
   display: flex;
-  padding: 80px 0;
+  padding: 50px;
   color: white;
   justify-content: space-between;
 }
