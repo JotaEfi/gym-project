@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
-// =================== Pages =================== //
 import Home from './js/pages/home.js';
 import Mentoria from './js/pages/mentoria.js';
-import Consultoria from './js/pages/consultoria';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Home/> */}
-    <Mentoria/>
-    {/* <Consultoria/> */}
+    <App />
   </React.StrictMode>,
 );
 

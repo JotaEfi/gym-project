@@ -3,8 +3,19 @@ import '../../css/queries.css';
 import { FaShoppingCart } from 'react-icons/fa';
 import { RiAccountCircleFill } from 'react-icons/ri';
 import { Link, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
-function NavBar() {
+const Navbar = () => {
+  const location = useLocation();
+  const [activeTab, setActiveTab] = useState('');
+
+  useEffect(() => {
+    setActiveTab(location.pathname);
+  }, [location.pathname]);
+
+  const handleTabClick = (path) => {
+    setActiveTab(path);
+  };
   return (
     <nav className="nav-bar">
       <a href="#">
@@ -14,16 +25,36 @@ function NavBar() {
         </div>
       </a>
       <ul>
-        <a href="#" className="Item1">
+        <a
+          href="home"
+          to="/"
+          className={activeTab === '/' ? 'active' : ''}
+          onClick={() => handleTabClick('/')}
+        >
           Página Inicial
         </a>
-        <a href="#" className="Item2">
+        <a
+          href="mentoria"
+          to="/mentoria"
+          className={activeTab === '/mentoria' ? 'active' : ''}
+          onClick={() => handleTabClick('/mentoria')}
+        >
           Mentoria
         </a>
-        <a href="#" className="Item3">
+        <a
+          href="loja"
+          to="/loja"
+          className={activeTab === '/loja' ? 'active' : ''}
+          onClick={() => handleTabClick('/loja')}
+        >
           Loja
-        </a>
-        <a href="#" className="Item4">
+        </a>{' '}
+        <a
+          href="consultoria"
+          to="/consultoria"
+          className={activeTab === '/consultoria' ? 'active' : ''}
+          onClick={() => handleTabClick('/consultoria')}
+        >
           Consultoria Online
         </a>
         <a href="#" className="Item5">
@@ -44,5 +75,5 @@ function NavBar() {
       </a>
     </nav>
   );
-}
-export default NavBar;
+};
+export default Navbar;
