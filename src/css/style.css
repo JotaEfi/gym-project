@@ -25,14 +25,12 @@
     rgba(0, 0, 0, 1) 100%
   );
 }
-.nav-bar:hover {
-}
+
 .nav-bar ul {
   justify-content: space-around;
   display: flex;
   align-items: center;
-  border-radius: 0 0 20px 20px;
-  padding: 15px 10px 10px 10px;
+  padding: 15px 10px 20px 10px;
   width: 100%;
   max-width: 123rem;
 }
@@ -50,13 +48,17 @@
   transition-duration: 0.2s;
   color: rgb(203, 147, 83);
   border-bottom: 4px rgb(255, 199, 95) solid;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 .nav-bar button {
   background-color: rgba(255, 255, 255, 0.15);
   border: none;
   border-radius: 2px;
   backdrop-filter: blur(5px);
+}
+.nav-bar button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transition-duration: 0.2s;
 }
 .logo {
   background-color: rgb(88, 88, 88);
@@ -70,18 +72,19 @@
   padding: 5px 10px;
   display: flex;
   align-items: center;
-  border-bottom: 4px transparent solid;
+  border: 2px transparent solid;
   justify-content: center;
-  color: rgb(243, 159, 13);
+  color: rgb(228, 176, 81);
 }
 .nav-bar-laterals:hover {
   transition-duration: 0.2s;
-  color: rgb(172, 113, 11);
+  color: rgb(164, 126, 56);
   border: 2px;
   transition-duration: 0.2s;
-  border-bottom: 4px rgba(255, 255, 255, 0.218) solid;
+  border: 2px rgba(255, 255, 255, 0.218) solid;
   border-radius: 5px;
 }
+
 .nav-bar-laterals p {
   font-size: 12px;
 }
@@ -223,20 +226,31 @@
 .mentoria-start-section {
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  position: relative;
+  min-height: 800px;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .mentoria-start-container {
+  padding: 50px;
+  max-width: 123rem;
+  width: 100%;
   margin: 0 15%;
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-
+  gap: 50px;
+  position: absolute;
   text-align: center;
 }
 .mentoria-start-content {
   display: flex;
+  text-align: start;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
 }
 .mentoria-start-container h1 {
   font-size: 50px;
@@ -267,7 +281,7 @@
 }
 .mentoria-start-form form button {
   padding: 10px 20px;
-  width: 10%;
+  width: 150px;
   border: none;
   background-color: red;
   border-radius: 5px;
@@ -306,4 +320,6 @@
 /* ============================================= */
 ul a.active {
   border-bottom: 4px rgb(228, 176, 81) solid;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
 }

@@ -12,14 +12,19 @@ function Mentoria() {
           <img src={GymImg1} alt="Imagem da Academia" />
         </div>
 
-        <div className="main-content-content">
-          <h1>Nome da Pessoa</h1>
+        <div class="main-content-content">
+          <div>
+            <h1>Nome da Pessoa</h1>
+          </div>
         </div>
       </div>
       <section className="mentoria-start-section">
         <div className="mentoria-start-container">
           <div className="mentoria-start-content">
-            <h1>MENTORIA</h1>
+            <h1>
+              Desbloqueie seu Potencial com Nossa Mentoria Personalizada na
+              Academia
+            </h1>
             <h4>
               QUER FAZER PARTE DA LEGIÃO DE TREINADORES QUE VÃO SE TORNAR
               PROFISSIONAIS EM CONSULTORIA FITNESS?
